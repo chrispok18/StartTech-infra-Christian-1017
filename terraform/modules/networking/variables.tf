@@ -1,19 +1,11 @@
-variable "aws_region" {
-  description = "AWS region"
-  type        = string
-  default     = "eu-west-1"
-}
-
 variable "project_name" {
-  description = "Project name prefix"
   type        = string
-  default     = "starttech"
+  description = "Project name prefix"
 }
 
 variable "environment" {
-  description = "Environment name"
   type        = string
-  default     = "prod"
+  description = "Environment name"
 }
 
 variable "vpc_cidr" {
