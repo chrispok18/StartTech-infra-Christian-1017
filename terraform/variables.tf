@@ -1,37 +1,34 @@
-variable "aws_region" {
-  description = "AWS region"
-  type        = string
-  default     = "eu-west-1"
-}
-
 variable "project_name" {
-  description = "Project name prefix"
-  type        = string
-  default     = "starttech"
+  type    = string
+  default = "starttech"
 }
 
 variable "environment" {
-  description = "Environment name"
-  type        = string
-  default     = "prod"
+  type    = string
+  default = "prod"
+}
+
+variable "aws_region" {
+  type    = string
+  default = "eu-west-1"
 }
 
 variable "vpc_cidr" {
-  type        = string
-  description = "CIDR block for the VPC"
+  type = string
 }
 
 variable "public_subnet_cidrs" {
-  type        = list(string)
-  description = "CIDR blocks for public subnets"
+  type = list(string)
 }
 
 variable "private_subnet_cidrs" {
-  type        = list(string)
-  description = "CIDR blocks for private subnets"
+  type = list(string)
 }
 
 variable "availability_zones" {
-  type        = list(string)
-  description = "Availability zones"
+  type = list(string)
+}
+
+variable "ami_id" {
+  type = string
 }
