@@ -1,0 +1,25 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/ApplicationELB",
+            "RequestCount",
+            "LoadBalancer",
+            "app/starttech-prod-alb/60b815265276d0c0"
+          ]
+        ],
+        "period": 60,
+        "stat": "Sum",
+        "region": "eu-west-1",
+        "title": "ALB Request Count"
+      }
+    }
+  ]
+}

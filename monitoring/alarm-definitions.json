@@ -1,0 +1,11 @@
+{
+  "alarms": [
+    {
+      "name": "starttech-prod-alb-unhealthy-hosts",
+      "metric": "UnHealthyHostCount",
+      "threshold": "> 0",
+      "resource": "ALB Target Group",
+      "description": "Triggers when backend targets become unhealthy"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Backend startup logs
+fields @timestamp, @message
+| filter @message like /Starting server/
+| sort @timestamp desc
+| limit 20
+
+# Cloud-init logs
+fields @timestamp, @message
+| filter @logStream like /cloud-init/
+| sort @timestamp desc
+| limit 20
+
